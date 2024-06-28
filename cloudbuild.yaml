@@ -8,4 +8,7 @@ steps:
         cd gcp-poc
         gsutil -m cp -r ./*.py gs://australia-southeast1-poc-co-f4015def-bucket/dags/
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 timeout: '1200s'

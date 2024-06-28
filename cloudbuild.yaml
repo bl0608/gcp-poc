@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        git clone https://github.com/bl0608/gcp-poc.git
+        cd gcp-poc
+        gsutil -m cp -r ./*.py gs://<YOUR_COMPOSER_BUCKET>/dags/
+
+timeout: '1200s'

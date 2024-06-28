@@ -6,6 +6,6 @@ steps:
       - |
         git clone https://github.com/bl0608/gcp-poc.git
         cd gcp-poc
-        gsutil -m cp -r ./*.py gs://<YOUR_COMPOSER_BUCKET>/dags/
+        gsutil -m cp -r ./*.py gs://australia-southeast1-poc-co-f4015def-bucket/dags/
 
 timeout: '1200s'
